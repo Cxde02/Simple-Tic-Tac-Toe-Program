@@ -11,7 +11,7 @@ public class TicTacToe {
         board = new String[9];
         turn = "O";
         String winner = null;
-        populateEmptyBoard();
+        createEmptyBoardWithAddedNum();
 
         System.out.println("---2-Player Tic Tac Toe---");
         System.out.println("***************************");
@@ -130,7 +130,7 @@ public class TicTacToe {
     }
 
     // Method to initialize an empty board
-    static void populateEmptyBoard() {
+    static void createEmptyBoardWithAddedNum() {
         for (int a = 0; a < 9; a++) {
             board[a] = String.valueOf(a + 1);
         }
